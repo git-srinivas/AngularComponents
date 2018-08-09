@@ -1,0 +1,14 @@
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h1>NPM Repositories</h1>
+ <div class="form-group">
+<input class="form-control" [formControl]="queryField" type="text" id="keyword" placeholder="search for repos..." autofocus/>
+
+<ul class="list-group" *ngIf="results">
+     <li [class]="result?.color"  *ngFor="let result of results">{{result?.name}}</li>
+</ul>
+ </div>
+ </div>
+  </div>
+</div>
